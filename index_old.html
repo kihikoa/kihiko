@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-Welcome!-</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <!--a href="#home" class="w3-button w3-bar-item">Home</a> -->
+    <p> <a href="aboutme.html">About Me</a>.</p>
+    <p> <a href="projects.html">Projects</a>.</p>
+  </nav>
+  
+  <!-- Slide Show -->
+  <section>
+
+    <video class="mySlides" style="width:100%" controls>
+      <source src="wairimu_video_copy.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+      <!-- Navigation
+    <img class="mySlides" src="img_band_la.jpg" style="width:100%">
+    <img class="mySlides" src="img_band_ny.jpg" style="width:100%">
+    <img class="mySlides" src="img_band_chicago.jpg" style="width:100%">
+     -->
+  </section>
+  
+
+  <script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 20000);
+  }
+  </script>
+</body>
+
+</html>
